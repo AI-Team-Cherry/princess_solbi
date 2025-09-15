@@ -1,0 +1,94 @@
+# NLP Analytics Platform Frontend - 필수 조건
+
+## 시스템 요구사항
+
+### Node.js (필수)
+- **버전**: Node.js 18.0.0 이상
+- **npm**: 8.0.0 이상
+- **다운로드**: https://nodejs.org/
+
+### 운영체제
+- Windows 10/11
+- macOS 10.15 이상
+- Linux (Ubuntu 18.04+, CentOS 7+, 등)
+
+### 브라우저
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+### 하드웨어
+- RAM: 4GB 이상 (8GB 권장)
+- 저장공간: 1GB 이상
+- 인터넷 연결 (패키지 다운로드용)
+
+## 설치 순서
+
+### 1. Node.js 설치
+```bash
+# 버전 확인
+node --version
+npm --version
+```
+
+### 2. 프로젝트 의존성 (자동 설치됨)
+다음 패키지들이 `npm install` 시 자동으로 설치됩니다:
+
+#### 주요 프레임워크
+- react@19.1.1
+- react-dom@19.1.1
+- react-router-dom@7.8.2
+- typescript@4.9.5
+
+#### UI 라이브러리
+- @mui/material@7.3.2
+- @mui/icons-material@7.3.2
+- @emotion/react@11.14.0
+- @emotion/styled@11.14.1
+
+#### 데이터 시각화
+- react-vega@8.0.0
+- react-vega-lite@6.1.0
+- vega@5.33.0
+- vega-lite@5.23.0
+- vega-embed@7.0.2
+
+#### HTTP 클라이언트
+- axios@1.11.0
+
+#### 개발 도구
+- react-scripts@5.0.1
+- @testing-library/react@16.3.0
+- @testing-library/jest-dom@6.8.0
+- @testing-library/user-event@13.5.0
+
+#### 타입 정의
+- @types/react@19.1.12
+- @types/react-dom@19.1.9
+- @types/react-router-dom@5.3.3
+- @types/react-vega@6.0.0
+- @types/node@16.18.126
+- @types/jest@27.5.2
+
+### 3. 선택사항 (빌드된 파일 서빙용)
+```bash
+# Python이 있는 경우
+python3 --version  # Python 3.x
+
+# 또는 serve 패키지
+npx serve --version
+```
+
+## 포트 요구사항
+- 개발 서버: 3000 (기본값, 변경 가능)
+- 빌드 서빙: 8000 또는 임의 포트
+
+## 네트워크 요구사항
+- 인터넷 연결 (패키지 다운로드용)
+- 방화벽에서 Node.js/npm 허용
+
+## 디스크 공간
+- 소스코드: ~50MB
+- node_modules: ~500MB
+- 빌드 파일: ~5MB
